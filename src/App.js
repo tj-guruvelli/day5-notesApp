@@ -32,9 +32,9 @@ const App = () => {
   }, []);
 
   return (
-    <div className="bg-gradient-to-r from-yellow-200 to-yellow-700 w-full h-screen flex flex-row justify-center">
+    <div className="bg-gradient-to-r from-indigo-500 to-purple-900 w-full h-screen flex flex-row justify-center">
       <div className="flex flex-col justify-center">
-        <div className="text-3xl text-center mb-6 font-bold"> NoteTaker</div>
+        <div className="text-3xl text-center mb-6 font-bold font-mono text-white"> NoteTaker</div>
         <NoteArea value={text} onChange={on_text_change} />
         <div className="flex flex-row gap-3 justify-center">
           <Save notes={text} handleSave={handleSave} />

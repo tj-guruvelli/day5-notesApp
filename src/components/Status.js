@@ -1,7 +1,7 @@
 function Status({ status }) {
   return (
     <div
-      className="mb-6 text-xl 
+      className="mb-6 text-xl text-white
     animate-pulse
     inline-block
     text-center
