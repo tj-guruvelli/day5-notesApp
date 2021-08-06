@@ -1,6 +1,16 @@
 function Status({ status }) {
-    return <label className="mb-4 
-    text-xl animate-pulse">{status}</label>;
-  }
-  
-  export default Status;
+  return (
+    <div
+      className="mb-6 text-xl 
+    animate-pulse
+    inline-block
+    text-center
+    py-1 px-4
+    font-bold"
+    >
+      Changes: {status}
+    </div>
+  );
+}
+
+export default Status;

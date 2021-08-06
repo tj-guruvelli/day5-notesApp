@@ -2,7 +2,7 @@ import React from "react";
 
 const DeleteButton = ({ children, onClick }) => {
   const classes = [
-    "bg-red-700 transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:transform-none text-white rounded-full",
+    "transition duration-500 ease-in-out bg-red-700 hover:bg-black transform hover:-translate-y-1 hover:scale-110",
     "text-white rounded-full",
     "py-2 px-4",
     "text-center font-bold",

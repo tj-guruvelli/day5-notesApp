@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import Button from "./components/DeleteButton";
 import NoteArea from "./components/NoteArea";
 import Status from "./components/Status";
@@ -32,15 +32,13 @@ const App = () => {
   }, []);
 
   return (
-    <div className="w-full h-screen flex flex-row justify-center">
+    <div className="bg-gradient-to-r from-yellow-200 to-yellow-700 w-full h-screen flex flex-row justify-center">
       <div className="flex flex-col justify-center">
         <div className="text-3xl text-center mb-6 font-bold"> NoteTaker</div>
         <NoteArea value={text} onChange={on_text_change} />
         <div className="flex flex-row gap-3 justify-center">
-        <Save notes={text} handleSave={handleSave} />
-          <Button onClick={on_click}>
-            Delete
-          </Button>
+          <Save notes={text} handleSave={handleSave} />
+          <Button onClick={on_click}>Delete</Button>
           <Status status={status} />
         </div>
       </div>
